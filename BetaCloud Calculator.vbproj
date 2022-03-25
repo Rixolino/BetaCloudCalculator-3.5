@@ -17,7 +17,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>C:\Users\SIMONE\Downloads\BetaCloud Calculator Beta\Vers 2\</PublishUrl>
+    <PublishUrl>C:\Users\SIMONE\Downloads\BetaCloud Calculator 2022\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -31,7 +31,7 @@
     <ProductName>BetaCloud Calculator</ProductName>
     <PublisherName>BetaCloud Archive</PublisherName>
     <SuiteName>Apps</SuiteName>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>14</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -82,7 +82,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\betacloud-calc.ico</ApplicationIcon>
+    <ApplicationIcon>betacloud.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
@@ -135,6 +135,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DEmore.Designer.vb">
+      <DependentUpon>DEmore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DEmore.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FunctionConverter.Designer.vb">
       <DependentUpon>FunctionConverter.vb</DependentUpon>
     </Compile>
@@ -147,10 +153,22 @@
     <Compile Include="Geometry.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Graphics.Designer.vb">
+      <DependentUpon>Graphics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Linear equations.Designer.vb">
       <DependentUpon>Linear equations.vb</DependentUpon>
     </Compile>
     <Compile Include="Linear equations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinEquationTriple.Designer.vb">
+      <DependentUpon>LinEquationTriple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LinEquationTriple.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Money Value.Designer.vb">
@@ -218,16 +236,31 @@
     <Compile Include="Convertitor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TEmore.Designer.vb">
+      <DependentUpon>TEmore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TEmore.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DEmore.resx">
+      <DependentUpon>DEmore.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FunctionConverter.resx">
       <DependentUpon>FunctionConverter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Geometry.resx">
       <DependentUpon>Geometry.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Graphics.resx">
+      <DependentUpon>Graphics.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Linear equations.resx">
       <DependentUpon>Linear equations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinEquationTriple.resx">
+      <DependentUpon>LinEquationTriple.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Money Value.resx">
       <DependentUpon>Money Value.vb</DependentUpon>
@@ -259,6 +292,9 @@
     <EmbeddedResource Include="Convertitor.resx">
       <DependentUpon>Convertitor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TEmore.resx">
+      <DependentUpon>TEmore.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="BetaCloud Calculator_1_TemporaryKey.pfx" />
@@ -288,7 +324,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\betacloud-removebg-preview.png" />
+    <None Include="Resources\kisspng-computer-icons-computer-mouse-icon-design-symbol-move-5ac2dfc3938b30.9915034715227207076044.jpg" />
+    <None Include="Resources\Immagine 2022-03-11 194430.png" />
+    <None Include="Resources\unnamed.jpg" />
     <None Include="Resources\96008521641ba74442999e1394f478c.gif" />
+    <Content Include="betacloud.ico" />
     <Content Include="Resources\betacloud-calc.ico" />
     <None Include="Resources\1300mathformulas.pdf" />
     <None Include="Resources\Immagine 2021-11-30 203321.png" />

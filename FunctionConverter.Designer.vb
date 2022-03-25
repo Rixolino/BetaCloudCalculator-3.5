@@ -36,6 +36,8 @@ Partial Class FunctionConverter
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Minimizea = New System.Windows.Forms.Label()
+        Me.Closea = New System.Windows.Forms.Label()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -175,11 +177,34 @@ Partial Class FunctionConverter
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Minimizea
+        '
+        Me.Minimizea.AutoSize = True
+        Me.Minimizea.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Minimizea.Location = New System.Drawing.Point(1196, -4)
+        Me.Minimizea.Name = "Minimizea"
+        Me.Minimizea.Size = New System.Drawing.Size(30, 40)
+        Me.Minimizea.TabIndex = 56
+        Me.Minimizea.Text = "-"
+        '
+        'Closea
+        '
+        Me.Closea.AutoSize = True
+        Me.Closea.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Closea.Location = New System.Drawing.Point(1239, -4)
+        Me.Closea.Name = "Closea"
+        Me.Closea.Size = New System.Drawing.Size(37, 37)
+        Me.Closea.TabIndex = 55
+        Me.Closea.Text = "X"
+        '
         'FunctionConverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlText
         Me.ClientSize = New System.Drawing.Size(1278, 808)
+        Me.Controls.Add(Me.Minimizea)
+        Me.Controls.Add(Me.Closea)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.Label5)
@@ -193,7 +218,8 @@ Partial Class FunctionConverter
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.ForeColor = System.Drawing.SystemColors.Control
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FunctionConverter"
@@ -224,4 +250,6 @@ Partial Class FunctionConverter
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents Minimizea As Label
+    Friend WithEvents Closea As Label
 End Class

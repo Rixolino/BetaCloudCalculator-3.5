@@ -50,15 +50,18 @@ Partial Class Normal
         Me.MoneyValueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button15 = New System.Windows.Forms.Button()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Minimizea = New System.Windows.Forms.Label()
+        Me.Closea = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GraphicsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button2
         '
-        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(13, 200)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button2.Location = New System.Drawing.Point(14, 300)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 53)
         Me.Button2.TabIndex = 1
@@ -67,9 +70,9 @@ Partial Class Normal
         '
         'Button3
         '
-        Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button3.Location = New System.Drawing.Point(133, 200)
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button3.Location = New System.Drawing.Point(134, 300)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(96, 53)
         Me.Button3.TabIndex = 2
@@ -78,9 +81,9 @@ Partial Class Normal
         '
         'Button4
         '
-        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button4.Location = New System.Drawing.Point(362, 200)
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button4.Location = New System.Drawing.Point(363, 300)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(96, 53)
         Me.Button4.TabIndex = 3
@@ -89,9 +92,9 @@ Partial Class Normal
         '
         'Button5
         '
-        Me.Button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button5.Location = New System.Drawing.Point(362, 288)
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button5.Location = New System.Drawing.Point(363, 388)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(96, 53)
         Me.Button5.TabIndex = 6
@@ -100,9 +103,9 @@ Partial Class Normal
         '
         'Button6
         '
-        Me.Button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button6.Location = New System.Drawing.Point(132, 288)
+        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button6.Location = New System.Drawing.Point(133, 388)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(96, 53)
         Me.Button6.TabIndex = 5
@@ -111,9 +114,9 @@ Partial Class Normal
         '
         'Button7
         '
-        Me.Button7.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button7.Location = New System.Drawing.Point(12, 288)
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button7.Location = New System.Drawing.Point(13, 388)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(96, 53)
         Me.Button7.TabIndex = 4
@@ -122,9 +125,9 @@ Partial Class Normal
         '
         'Button8
         '
-        Me.Button8.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button8.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button8.Location = New System.Drawing.Point(362, 465)
+        Me.Button8.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button8.Location = New System.Drawing.Point(363, 565)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(96, 53)
         Me.Button8.TabIndex = 9
@@ -133,9 +136,9 @@ Partial Class Normal
         '
         'Button9
         '
-        Me.Button9.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button9.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button9.Location = New System.Drawing.Point(132, 379)
+        Me.Button9.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button9.Location = New System.Drawing.Point(133, 479)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(96, 53)
         Me.Button9.TabIndex = 8
@@ -144,9 +147,9 @@ Partial Class Normal
         '
         'Button10
         '
-        Me.Button10.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button10.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button10.Location = New System.Drawing.Point(12, 379)
+        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button10.Location = New System.Drawing.Point(13, 479)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(96, 53)
         Me.Button10.TabIndex = 7
@@ -155,9 +158,9 @@ Partial Class Normal
         '
         'Button11
         '
-        Me.Button11.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button11.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button11.Location = New System.Drawing.Point(362, 379)
+        Me.Button11.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button11.Location = New System.Drawing.Point(363, 479)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(96, 53)
         Me.Button11.TabIndex = 12
@@ -166,9 +169,9 @@ Partial Class Normal
         '
         'Button12
         '
-        Me.Button12.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button12.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button12.Location = New System.Drawing.Point(132, 465)
+        Me.Button12.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button12.Location = New System.Drawing.Point(133, 565)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(96, 53)
         Me.Button12.TabIndex = 11
@@ -177,9 +180,9 @@ Partial Class Normal
         '
         'Button13
         '
-        Me.Button13.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button13.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button13.Location = New System.Drawing.Point(12, 465)
+        Me.Button13.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button13.Location = New System.Drawing.Point(13, 565)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(96, 53)
         Me.Button13.TabIndex = 10
@@ -188,8 +191,8 @@ Partial Class Normal
         '
         'Button1
         '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Button1.Location = New System.Drawing.Point(383, 158)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button1.Location = New System.Drawing.Point(384, 258)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 13
@@ -198,9 +201,9 @@ Partial Class Normal
         '
         'Button14
         '
-        Me.Button14.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button14.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button14.Location = New System.Drawing.Point(11, 540)
+        Me.Button14.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button14.Location = New System.Drawing.Point(12, 640)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(447, 53)
         Me.Button14.TabIndex = 14
@@ -209,20 +212,21 @@ Partial Class Normal
         '
         'TextBox1
         '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.InfoText
         Me.TextBox1.Enabled = False
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.TextBox1.Location = New System.Drawing.Point(11, 24)
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.Window
+        Me.TextBox1.Location = New System.Drawing.Point(12, 131)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(461, 128)
+        Me.TextBox1.Size = New System.Drawing.Size(461, 121)
         Me.TextBox1.TabIndex = 15
         '
         'Button16
         '
-        Me.Button16.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button16.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button16.Location = New System.Drawing.Point(249, 200)
+        Me.Button16.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button16.Location = New System.Drawing.Point(250, 300)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(96, 53)
         Me.Button16.TabIndex = 17
@@ -231,9 +235,9 @@ Partial Class Normal
         '
         'Button17
         '
-        Me.Button17.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button17.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button17.Location = New System.Drawing.Point(249, 288)
+        Me.Button17.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button17.Location = New System.Drawing.Point(250, 388)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(96, 53)
         Me.Button17.TabIndex = 18
@@ -246,73 +250,122 @@ Partial Class Normal
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ControlText
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalculatorToolStripMenuItem, Me.AboutToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalculatorToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(2, 49)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(484, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(312, 28)
         Me.MenuStrip1.TabIndex = 19
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'CalculatorToolStripMenuItem
         '
-        Me.CalculatorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NormalActualToolStripMenuItem, Me.ScientificToolStripMenuItem, Me.UnitOfMeasureToolStripMenuItem, Me.MoneyValueToolStripMenuItem})
+        Me.CalculatorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NormalActualToolStripMenuItem, Me.ScientificToolStripMenuItem, Me.UnitOfMeasureToolStripMenuItem, Me.MoneyValueToolStripMenuItem, Me.GraphicsToolStripMenuItem})
+        Me.CalculatorToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.CalculatorToolStripMenuItem.Name = "CalculatorToolStripMenuItem"
         Me.CalculatorToolStripMenuItem.Size = New System.Drawing.Size(90, 24)
         Me.CalculatorToolStripMenuItem.Text = "Calculator"
         '
         'NormalActualToolStripMenuItem
         '
+        Me.NormalActualToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlText
+        Me.NormalActualToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.NormalActualToolStripMenuItem.Name = "NormalActualToolStripMenuItem"
-        Me.NormalActualToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
-        Me.NormalActualToolStripMenuItem.Text = "Normal (Actual)"
+        Me.NormalActualToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NormalActualToolStripMenuItem.Text = "Standard (Actual)"
         '
         'ScientificToolStripMenuItem
         '
+        Me.ScientificToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlText
+        Me.ScientificToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.ScientificToolStripMenuItem.Name = "ScientificToolStripMenuItem"
-        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ScientificToolStripMenuItem.Text = "Scientific"
         '
         'UnitOfMeasureToolStripMenuItem
         '
+        Me.UnitOfMeasureToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlText
+        Me.UnitOfMeasureToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.UnitOfMeasureToolStripMenuItem.Name = "UnitOfMeasureToolStripMenuItem"
-        Me.UnitOfMeasureToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.UnitOfMeasureToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.UnitOfMeasureToolStripMenuItem.Text = "Unit of Measure"
         '
         'MoneyValueToolStripMenuItem
         '
+        Me.MoneyValueToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlText
+        Me.MoneyValueToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.MoneyValueToolStripMenuItem.Name = "MoneyValueToolStripMenuItem"
-        Me.MoneyValueToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.MoneyValueToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.MoneyValueToolStripMenuItem.Text = "Money Value"
         '
         'AboutToolStripMenuItem
         '
+        Me.AboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'Button15
         '
-        Me.Button15.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button15.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!)
-        Me.Button15.Location = New System.Drawing.Point(249, 379)
+        Me.Button15.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button15.Location = New System.Drawing.Point(250, 479)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(96, 53)
         Me.Button15.TabIndex = 20
         Me.Button15.Text = "-x"
         Me.Button15.UseVisualStyleBackColor = True
         '
-        'ExitToolStripMenuItem
+        'Minimizea
         '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
-        Me.ExitToolStripMenuItem.Text = "Exit"
+        Me.Minimizea.AutoSize = True
+        Me.Minimizea.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Minimizea.Location = New System.Drawing.Point(404, 0)
+        Me.Minimizea.Name = "Minimizea"
+        Me.Minimizea.Size = New System.Drawing.Size(30, 40)
+        Me.Minimizea.TabIndex = 56
+        Me.Minimizea.Text = "-"
+        '
+        'Closea
+        '
+        Me.Closea.AutoSize = True
+        Me.Closea.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Closea.Location = New System.Drawing.Point(447, 0)
+        Me.Closea.Name = "Closea"
+        Me.Closea.Size = New System.Drawing.Size(37, 37)
+        Me.Closea.TabIndex = 55
+        Me.Closea.Text = "X"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(173, 24)
+        Me.Label1.TabIndex = 57
+        Me.Label1.Text = "Standard Calculator"
+        '
+        'GraphicsToolStripMenuItem
+        '
+        Me.GraphicsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlText
+        Me.GraphicsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.GraphicsToolStripMenuItem.Name = "GraphicsToolStripMenuItem"
+        Me.GraphicsToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.GraphicsToolStripMenuItem.Text = "Graphics"
         '
         'Normal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(484, 618)
+        Me.BackColor = System.Drawing.SystemColors.ControlText
+        Me.ClientSize = New System.Drawing.Size(484, 751)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Minimizea)
+        Me.Controls.Add(Me.Closea)
         Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button16)
@@ -332,7 +385,8 @@ Partial Class Normal
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.ForeColor = System.Drawing.SystemColors.Control
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
@@ -372,5 +426,8 @@ Partial Class Normal
     Friend WithEvents Button15 As Button
     Friend WithEvents UnitOfMeasureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MoneyValueToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Minimizea As Label
+    Friend WithEvents Closea As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents GraphicsToolStripMenuItem As ToolStripMenuItem
 End Class

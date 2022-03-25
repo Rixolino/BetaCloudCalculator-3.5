@@ -27,6 +27,8 @@ Partial Class Formulas
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Minimizea = New System.Windows.Forms.Label()
+        Me.Closea = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -69,16 +71,40 @@ Partial Class Formulas
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "DEG, RAD, GRAD conversion"
         '
+        'Minimizea
+        '
+        Me.Minimizea.AutoSize = True
+        Me.Minimizea.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Minimizea.Location = New System.Drawing.Point(896, -2)
+        Me.Minimizea.Name = "Minimizea"
+        Me.Minimizea.Size = New System.Drawing.Size(30, 40)
+        Me.Minimizea.TabIndex = 56
+        Me.Minimizea.Text = "-"
+        '
+        'Closea
+        '
+        Me.Closea.AutoSize = True
+        Me.Closea.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Closea.Location = New System.Drawing.Point(939, -2)
+        Me.Closea.Name = "Closea"
+        Me.Closea.Size = New System.Drawing.Size(37, 37)
+        Me.Closea.TabIndex = 55
+        Me.Closea.Text = "X"
+        '
         'Formulas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(979, 633)
+        Me.Controls.Add(Me.Minimizea)
+        Me.Controls.Add(Me.Closea)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.ForeColor = System.Drawing.SystemColors.Control
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
@@ -94,4 +120,6 @@ Partial Class Formulas
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Minimizea As Label
+    Friend WithEvents Closea As Label
 End Class

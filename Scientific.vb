@@ -4,8 +4,39 @@
     Dim a, b
     Dim op As String
     Dim x
-    Dim posINF As Double = Double.PositiveInfinity
-    Dim negINF As Double = Double.NegativeInfinity
+    Public MoveForm As Boolean
+    Public MoveForm_MousePosition As Point
+
+
+    Public Sub MoveForm_MouseDown(sender As Object, e As MouseEventArgs) Handles _
+    MyBase.MouseDown ' Add more handles here (Example: PictureBox1.MouseDown)
+
+        If e.Button = MouseButtons.Left Then
+            MoveForm = True
+            Me.Cursor = Cursors.NoMove2D
+            MoveForm_MousePosition = e.Location
+        End If
+
+    End Sub
+
+    Public Sub MoveForm_MouseMove(sender As Object, e As MouseEventArgs) Handles _
+    MyBase.MouseMove ' Add more handles here (Example: PictureBox1.MouseMove)
+
+        If MoveForm Then
+            Me.Location = Me.Location + (e.Location - MoveForm_MousePosition)
+        End If
+
+    End Sub
+
+    Public Sub MoveForm_MouseUp(sender As Object, e As MouseEventArgs) Handles _
+    MyBase.MouseUp ' Add more handles here (Example: PictureBox1.MouseUp)
+
+        If e.Button = MouseButtons.Left Then
+            MoveForm = False
+            Me.Cursor = Cursors.Default
+        End If
+
+    End Sub
     Function Factorial(n As Integer) As Integer
         If n <= 1 Then
             Return 1
@@ -141,7 +172,7 @@
         ButtonAnsC.Show()
     End Sub
 
-    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+    Private Sub Button14_Click(sender As Object, e As EventArgs) 
         b = CDbl(TextBox1.Text)
         Select Case op
             Case “/”
@@ -352,10 +383,6 @@
         ButtonAnsC.Show()
     End Sub
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button1000_Click(sender As Object, e As EventArgs) Handles Button1000.Click
         TextBox2.Text = TextBox2.Text & “-”
     End Sub
@@ -530,13 +557,694 @@
         TextBox2.Text = TextBox2.Text & “,”
     End Sub
 
-    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
+    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Application.Exit()
     End Sub
 
     Private Sub LinearEquationsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LinearEquationsToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub NormalToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NormalToolStripMenuItem1.Click
         Linearequations.Show()
         Me.Close()
+    End Sub
+
+    Private Sub AdvancedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdvancedToolStripMenuItem.Click
+        LinEquationTriple.Show()
+        Me.Close()
+    End Sub
+    Private Sub Closea_Click(sender As Object, e As EventArgs) Handles Closea.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub Minimizea_Click(sender As Object, e As EventArgs) Handles Minimizea.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub ConversionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConversionToolStripMenuItem.Click
+
+    End Sub
+    Private Sub KmHmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KmHmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10
+        TextBox2.Text = "*10"
+        functions.Show()
+        functions.Text = "k => h"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub KmDamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KmDamToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100
+        TextBox2.Text = "*100"
+        functions.Show()
+        functions.Text = "k => da"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub KmMToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KmMToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 1000
+        TextBox2.Text = "*1000"
+        functions.Show()
+        functions.Text = "k => u"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub KmDmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KmDmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10000
+        TextBox2.Text = "*10000"
+        functions.Show()
+        functions.Text = "k => d"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub KmCmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KmCmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100000
+        TextBox2.Text = "*100000"
+        functions.Show()
+        functions.Text = "k => c"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub KmMmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KmMmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 1000000
+        TextBox2.Text = "*1000000"
+        functions.Show()
+        functions.Text = "k => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub HmKmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HmKmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10
+        TextBox2.Text = "/10"
+        functions.Show()
+        functions.Text = "h => k"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub HmDamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HmDamToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10
+        TextBox2.Text = "*10"
+        functions.Show()
+        functions.Text = "h => k"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub HmMToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HmMToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100
+        TextBox2.Text = "*100"
+        functions.Show()
+        functions.Text = "h => u"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub HmDmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HmDmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 1000
+        TextBox2.Text = "*1000"
+        functions.Show()
+        functions.Text = "h => d"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub HmCmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HmCmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10000
+        TextBox2.Text = "*10000"
+        functions.Show()
+        functions.Text = "h => c"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub HmMmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HmMmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100000
+        TextBox2.Text = "*100000"
+        functions.Show()
+        functions.Text = "h => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DamKmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DamKmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 100
+        TextBox2.Text = "/100"
+        functions.Show()
+        functions.Text = "da => k"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DamHmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DamHmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10
+        TextBox2.Text = "/10"
+        functions.Show()
+        functions.Text = "da => h"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DamMToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DamMToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10
+        TextBox2.Text = "*10"
+        functions.Show()
+        functions.Text = "da => u"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DamDmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DamDmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100
+        TextBox2.Text = "*100"
+        functions.Show()
+        functions.Text = "da => d"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DamCmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DamCmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 1000
+        TextBox2.Text = "*1000"
+        functions.Show()
+        functions.Text = "da => c"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DamMmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DamMmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10000
+        TextBox2.Text = "*10000"
+        functions.Show()
+        functions.Text = "da => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MKmToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MKmToolStripMenuItem1.Click
+        TextBox3.Text = TextBox1.Text / 1000
+        TextBox2.Text = "/1000"
+        functions.Show()
+        functions.Text = "u => k"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MHmToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MHmToolStripMenuItem1.Click
+        TextBox3.Text = TextBox1.Text / 100
+        TextBox2.Text = "/100"
+        functions.Show()
+        functions.Text = "u => h"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MDamToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MDamToolStripMenuItem1.Click
+        TextBox3.Text = TextBox1.Text / 10
+        TextBox2.Text = "/10"
+        functions.Show()
+        functions.Text = "u => da"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MDmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MDmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10
+        TextBox2.Text = "*10"
+        functions.Show()
+        functions.Text = "u => d"
+    End Sub
+
+    Private Sub MCmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MCmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100
+        TextBox2.Text = "*100"
+        functions.Show()
+        functions.Text = "u => c"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MMmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MMmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 1000
+        TextBox2.Text = "*1000"
+        functions.Show()
+        functions.Text = "u => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DmKmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DmKmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10000
+        TextBox2.Text = "/10000"
+        functions.Show()
+        functions.Text = "d => k"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DmHmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DmHmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 1000
+        TextBox2.Text = "/1000"
+        functions.Show()
+        functions.Text = "d => h"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DmDamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DmDamToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 100
+        TextBox2.Text = "/100"
+        functions.Show()
+        functions.Text = "d => da"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DmMToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DmMToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10
+        TextBox2.Text = "/10"
+        functions.Show()
+        functions.Text = "d => u"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DmCmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DmCmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10
+        TextBox2.Text = "*10"
+        functions.Show()
+        functions.Text = "d => c"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub DmMmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DmMmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 100
+        TextBox2.Text = "*100"
+        functions.Show()
+        functions.Text = "d => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub CmKmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CmKmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 100000
+        TextBox2.Text = "/100000"
+        functions.Show()
+        functions.Text = "c => k"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+    Private Sub CmDamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CmDamToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10000
+        TextBox2.Text = "/10000"
+        functions.Show()
+        functions.Text = "c => h"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub CToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 1000
+        TextBox2.Text = "/1000"
+        functions.Show()
+        functions.Text = "c => da"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub CmMToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CmMToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 100
+        TextBox2.Text = "/100"
+        functions.Show()
+        functions.Text = "c => u"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub CmDmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CmDmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10
+        TextBox2.Text = "/10"
+        functions.Show()
+        functions.Text = "c => d"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub CmMmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CmMmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text * 10
+        TextBox2.Text = "*10"
+        functions.Show()
+        functions.Text = "c => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MmKmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MmKmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 1000000
+        TextBox2.Text = "/1000000"
+        functions.Show()
+        functions.Text = "mm => km"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MmCmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MmCmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 100000
+        TextBox2.Text = "/100000"
+        functions.Show()
+        functions.Text = "mm => hm"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MmDamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MmDamToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 10000
+        TextBox2.Text = "/10000"
+        functions.Show()
+        functions.Text = "mm => dam"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MmMToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MmMToolStripMenuItem1.Click
+        TextBox3.Text = TextBox1.Text / 1000
+        TextBox2.Text = "/1000"
+        functions.Show()
+        functions.Text = "mm => m"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MmDmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MmDmToolStripMenuItem.Click
+        TextBox3.Text = TextBox1.Text / 100
+        TextBox2.Text = "/100"
+        functions.Show()
+        functions.Text = "mm => dm"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
+    End Sub
+
+    Private Sub MmCmToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MmCmToolStripMenuItem1.Click
+        TextBox3.Text = TextBox1.Text / 10
+        TextBox2.Text = "/10"
+        functions.Show()
+        functions.Text = "mm => cm"
+        Label4.Hide()
+        Label6.Hide()
+        xEsp.Enabled = False
+        Button29.Enabled = False
+        PlusButt.Enabled = False
+        MinusButt.Enabled = False
+        MoltButt.Enabled = False
+        DivButton.Enabled = False
+        ButtonAnsC.Show()
     End Sub
 
     Private Sub PlusButt_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PlusButt.Click
