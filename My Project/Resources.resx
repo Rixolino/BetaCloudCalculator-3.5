@@ -127,6 +127,12 @@
   <data name="Immagine 2021-11-29 192056" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-29 192056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="96008521641ba74442999e1394f478c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\96008521641ba74442999e1394f478c.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Immagine 2021-11-29 190345" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-29 190345.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,6 +144,9 @@
   </data>
   <data name="Immagine 2021-11-29 190909" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-29 190909.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-computer-icons-computer-mouse-icon-design-symbol-move-5ac2dfc3938b30.9915034715227207076044" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-computer-mouse-icon-design-symbol-move-5ac2dfc3938b30.9915034715227207076044.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Immagine 2021-11-30 202837" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-30 202837.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +160,9 @@
   <data name="Immagine 2021-11-30 203144" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-30 203144.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Immagine 2022-03-11 194430" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Immagine 2022-03-11 194430.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Immagine 2021-11-30 203005" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-30 203005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,7 +175,7 @@
   <data name="Immagine 2021-11-29 191751" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Immagine 2021-11-29 191751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="96008521641ba74442999e1394f478c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\96008521641ba74442999e1394f478c.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="betacloud-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\betacloud-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

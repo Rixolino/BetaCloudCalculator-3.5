@@ -73,6 +73,16 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property betacloud_removebg_preview() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("betacloud-removebg-preview", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property imagen_back_button_no_r1oot_0thumb() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("imagen-back-button-no-r1oot-0thumb", resourceCulture)
@@ -216,6 +226,37 @@ Namespace My.Resources
         Friend ReadOnly Property Immagine_2021_11_30_203321() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Immagine 2021-11-30 203321", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Immagine_2022_03_11_194430() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Immagine 2022-03-11 194430", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property kisspng_computer_icons_computer_mouse_icon_design_symbol_move_5ac2dfc3938b30_9915034715227207076044() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("kisspng-computer-icons-computer-mouse-icon-design-symbol-move-5ac2dfc3938b30.9915"& _ 
+                        "034715227207076044", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property unnamed() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("unnamed", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
